@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minggu 2 – Konsep Dasar Sinyal & Data | Komunikasi Data</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    section { scroll-margin-top: 6rem; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-blue-700 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+      <h1 class="text-2xl font-bold">📡 Komunikasi Data – Minggu 2</h1>
+      <nav class="flex flex-wrap gap-3 text-sm">
+        <a href="#tujuan" class="bg-blue-600 hover:bg-blue-500 px-3 py-2 rounded-md">🎯 Tujuan</a>
+        <a href="#pokok" class="bg-blue-600 hover:bg-blue-500 px-3 py-2 rounded-md">📘 Pokok Bahasan</a>
+        <a href="#materi" class="bg-blue-600 hover:bg-blue-500 px-3 py-2 rounded-md">📗 Materi Inti</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-12 bg-gradient-to-b from-blue-100 to-white">
+    <h2 class="text-4xl font-bold text-blue-700 mb-4">Konsep Dasar Sinyal & Data</h2>
+    <p class="text-lg max-w-3xl mx-auto text-gray-600">
+      Minggu ke-2 Mata Kuliah Komunikasi Data (KOMDAT)
+    </p>
+  </section>
+
+  <!-- Tujuan -->
+  <section id="tujuan" class="max-w-5xl mx-auto py-10 px-6">
+    <h3 class="text-2xl font-bold text-blue-700 mb-4">🎯 Sub-CPMK / Tujuan Pembelajaran</h3>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Membedakan data analog dan data digital.</li>
+      <li>Menjelaskan karakteristik sinyal (amplitudo, frekuensi, dan fase).</li>
+      <li>Menjelaskan hubungan antara data, sinyal, dan transmisi dalam komunikasi data.</li>
+      <li>Mengidentifikasi jenis-jenis sinyal yang digunakan dalam sistem komunikasi.</li>
+    </ul>
+  </section>
+
+  <!-- Pokok Bahasan -->
+  <section id="pokok" class="max-w-5xl mx-auto py-10 px-6 bg-gray-100 rounded-2xl shadow-inner">
+    <h3 class="text-2xl font-bold text-blue-700 mb-4">📘 Pokok Bahasan</h3>
+    <ol class="list-decimal list-inside space-y-1">
+      <li>Pengantar Data dan Sinyal</li>
+      <li>Jenis Data: Analog dan Digital</li>
+      <li>Jenis Sinyal: Analog dan Digital</li>
+      <li>Karakteristik Sinyal (Amplitudo, Frekuensi, Fase)</li>
+      <li>Hubungan antara Data, Sinyal, dan Transmisi</li>
+      <li>Contoh Kasus dan Aplikasi Nyata</li>
+    </ol>
+  </section>
+
+  <!-- Materi Inti -->
+  <section id="materi" class="max-w-5xl mx-auto py-10 px-6">
+    <h3 class="text-2xl font-bold text-blue-700 mb-6">📗 Materi Inti</h3>
+
+    <h4 class="text-xl font-semibold text-blue-600 mt-6">1️⃣ Pengantar Data dan Sinyal</h4>
+    <p class="mt-2">Data adalah representasi fakta, instruksi, atau konsep yang diolah oleh komputer atau dikirim melalui media komunikasi. Data dapat berupa angka, teks, suara, atau gambar.</p>
+    <p class="mt-2">Sinyal adalah representasi fisik dari data dalam bentuk gelombang listrik, optik, atau elektromagnetik yang digunakan untuk mengirim data dari satu titik ke titik lain.</p>
+
+    <h4 class="text-xl font-semibold text-blue-600 mt-6">2️⃣ Jenis Data</h4>
+    <ul class="list-disc list-inside mt-2">
+      <li><strong>Analog:</strong> Nilai kontinu, contoh: suara manusia, suhu.</li>
+      <li><strong>Digital:</strong> Nilai diskrit (biner), contoh: teks komputer, gambar digital.</li>
+    </ul>
+
+    <h4 class="text-xl font-semibold text-blue-600 mt-6">3️⃣ Jenis Sinyal</h4>
+    <ul class="list-disc list-inside mt-2">
+      <li><strong>Sinyal Analog:</strong> Bentuk gelombang sinus kontinu, contoh: siaran radio.</li>
+      <li><strong>Sinyal Digital:</strong> Bentuk gelombang kotak (0 dan 1), contoh: komunikasi komputer.</li>
+    </ul>
+
+    <!-- Ilustrasi Sinyal -->
+    <div class="mt-6 flex flex-col lg:flex-row gap-6 items-center justify-center">
+      <div class="text-center">
+        <h5 class="font-semibold text-blue-600 mb-2">Gambar 1. Sinyal Analog (Kontinu)</h5>
+        <img src="sinyal_analog.svg" alt="Sinyal Analog" class="w-80 mx-auto rounded-xl shadow-md border">
+      </div>
+      <div class="text-center">
+        <h5 class="font-semibold text-blue-600 mb-2">Gambar 2. Sinyal Digital (Diskrit)</h5>
+        <img src="sinyal_digital.svg" alt="Sinyal Digital" class="w-80 mx-auto rounded-xl shadow-md border">
+      </div>
+    </div>
+
+    <h4 class="text-xl font-semibold text-blue-600 mt-8">4️⃣ Karakteristik Sinyal</h4>
+    <ul class="list-disc list-inside mt-2">
+      <li><strong>Amplitudo (A):</strong> Menunjukkan kekuatan sinyal (Volt).</li>
+      <li><strong>Frekuensi (f):</strong> Jumlah siklus per detik (Hz).</li>
+      <li><strong>Fase (φ):</strong> Posisi relatif gelombang terhadap waktu (°).</li>
+    </ul>
+
+    <h4 class="text-xl font-semibold text-blue-600 mt-8">5️⃣ Hubungan Data, Sinyal, & Transmisi</h4>
+    <p class="mt-2">Data adalah informasi, sinyal adalah representasi fisik data, dan transmisi adalah proses pengiriman sinyal melalui media komunikasi seperti kabel atau udara.</p>
+
+    <h4 class="text-xl font-semibold text-blue-600 mt-8">6️⃣ Contoh Aplikasi Nyata</h4>
+    <table class="table-auto w-full text-left border mt-2">
+      <thead class="bg-blue-100">
+        <tr>
+          <th class="border px-3 py-2">Aplikasi</th>
+          <th class="border px-3 py-2">Jenis Data</th>
+          <th class="border px-3 py-2">Jenis Sinyal</th>
+          <th class="border px-3 py-2">Media Transmisi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="border px-3 py-2">Telepon Rumah</td><td class="border px-3 py-2">Analog</td><td class="border px-3 py-2">Analog</td><td class="border px-3 py-2">Kabel Tembaga</td></tr>
+        <tr><td class="border px-3 py-2">Internet</td><td class="border px-3 py-2">Digital</td><td class="border px-3 py-2">Digital</td><td class="border px-3 py-2">Fiber Optik</td></tr>
+        <tr><td class="border px-3 py-2">Siaran Radio FM</td><td class="border px-3 py-2">Analog</td><td class="border px-3 py-2">Analog</td><td class="border px-3 py-2">Gelombang Radio</td></tr>
+        <tr><td class="border px-3 py-2">Streaming Video</td><td class="border px-3 py-2">Digital</td><td class="border px-3 py-2">Digital</td><td class="border px-3 py-2">Internet</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Navigasi Minggu -->
+  <div class="flex justify-between max-w-5xl mx-auto py-10 px-6">
+    <a href="minggu1.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded-lg shadow-md">⬅️ Minggu 1</a>
+    <a href="minggu3.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md">Minggu 3 ➡️</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-4 mt-10">
+    <p class="text-sm">&copy; 2025 | Mata Kuliah Komunikasi Data – Minggu 2</p>
+  </footer>
+</body>
+</html>
