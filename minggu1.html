@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minggu 1 - Pendahuluan & Ruang Lingkup Komunikasi Data</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      text-align: center;
+      padding: 1.5em 1em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: #e9ecef;
+      border-bottom: 2px solid #ccc;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      padding: 0.8em 1.5em;
+      margin: 0.2em;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+
+    nav button:hover {
+      background: #007bff;
+      color: white;
+    }
+
+    nav button.active {
+      background: #0056b3;
+      color: white;
+    }
+
+    section {
+      display: none;
+      padding: 2em;
+      animation: fadeIn 0.5s ease;
+      line-height: 1.6em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #0056b3;
+    }
+
+    ul {
+      margin-left: 1.5em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+      background: #f1f1f1;
+      border-top: 1px solid #ccc;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Komunikasi Data – Minggu 1</h1>
+    <p><em>Pendahuluan & Ruang Lingkup Komunikasi Data</em></p>
+  </header>
+
+  <nav>
+    <button class="active" onclick="showSection('tujuan')">Tujuan</button>
+    <button onclick="showSection('pengertian')">Pengertian</button>
+    <button onclick="showSection('komponen')">Komponen</button>
+    <button onclick="showSection('manfaat')">Manfaat</button>
+    <button onclick="showSection('analogi')">Analogi</button>
+    <button onclick="showSection('pengayaan')">Materi Pengayaan</button>
+  </nav>
+
+  <section id="tujuan" class="active">
+    <h2>Tujuan Pembelajaran</h2>
+    <p>Setelah mengikuti perkuliahan minggu ini, mahasiswa diharapkan mampu:</p>
+    <ul>
+      <li>Menjelaskan definisi komunikasi data.</li>
+      <li>Memahami ruang lingkup mata kuliah komunikasi data.</li>
+      <li>Mengidentifikasi manfaat komunikasi data dalam kehidupan sehari-hari.</li>
+      <li>Menghubungkan komunikasi data dengan bidang Teknik Informatika dan jaringan komputer.</li>
+    </ul>
+    <h3>Ruang Lingkup Mata Kuliah</h3>
+    <ul>
+      <li>Konsep sinyal, data, dan transmisi.</li>
+      <li>Model OSI & TCP/IP.</li>
+      <li>Media transmisi kabel & wireless.</li>
+      <li>Switching & multiplexing.</li>
+      <li>Deteksi & koreksi kesalahan.</li>
+      <li>Protokol komunikasi populer.</li>
+      <li>Topologi jaringan & perangkat.</li>
+      <li>Keamanan data dasar.</li>
+      <li>Aplikasi komunikasi data dalam kehidupan nyata.</li>
+    </ul>
+  </section>
+
+  <section id="pengertian">
+    <h2>Pengertian Komunikasi Data</h2>
+    <p><strong>Komunikasi</strong> = proses penyampaian informasi dari pengirim (sender) ke penerima (receiver).</p>
+    <p><strong>Data</strong> = representasi fakta, konsep, atau instruksi dalam bentuk yang bisa diproses (angka, teks, gambar, audio, video).</p>
+    <p><strong>Komunikasi Data</strong> = proses pengiriman dan penerimaan data antara dua perangkat atau lebih melalui media transmisi.</p>
+    <h3>Contoh Sehari-hari:</h3>
+    <ul>
+      <li>Mengirim pesan WhatsApp → teks dikirim dari HP A ke HP B melalui jaringan.</li>
+      <li>Streaming YouTube → data video/audio dikirim dari server ke laptop atau ponsel.</li>
+    </ul>
+  </section>
+
+  <section id="komponen">
+    <h2>Komponen dalam Komunikasi Data</h2>
+    <ul>
+      <li><strong>Sender (Pengirim)</strong> – perangkat yang mengirim data (PC, smartphone).</li>
+      <li><strong>Receiver (Penerima)</strong> – perangkat tujuan data (PC lain, server, printer).</li>
+      <li><strong>Message (Pesan/Data)</strong> – informasi yang dikirim (teks, gambar, audio).</li>
+      <li><strong>Transmission Medium (Media Transmisi)</strong> – jalur fisik/non-fisik (kabel, fiber, wireless).</li>
+      <li><strong>Protocol</strong> – aturan agar komunikasi berjalan benar (contoh: TCP/IP, HTTP, Bluetooth).</li>
+    </ul>
+  </section>
+
+  <section id="manfaat">
+    <h2>Manfaat Komunikasi Data</h2>
+    <ul>
+      <li>Efisiensi waktu – informasi bisa dikirim dalam hitungan detik (email, chat).</li>
+      <li>Kemudahan akses informasi – data dapat diakses kapan saja, di mana saja (cloud storage).</li>
+      <li>Kolaborasi – mendukung kerja tim jarak jauh (Google Docs, Zoom).</li>
+      <li>Otomatisasi & kontrol – sistem IoT, smart home, dan industri 4.0.</li>
+      <li>Penyebaran informasi global – internet sebagai sarana komunikasi internasional.</li>
+    </ul>
+  </section>
+
+  <section id="analogi">
+    <h2>Analogi Komunikasi Data</h2>
+    <p>Komunikasi data seperti percakapan manusia:</p>
+    <ul>
+      <li>Bahasa = protokol</li>
+      <li>Suara = sinyal</li>
+      <li>Telepon = media transmisi</li>
+      <li>Orang bicara = pengirim & penerima</li>
+    </ul>
+    <p>Seperti mengirim surat:</p>
+    <ul>
+      <li><strong>Pengirim (Sender)</strong> → orang yang menulis surat.</li>
+      <li><strong>Pesan (Message)</strong> → isi surat.</li>
+      <li><strong>Media (Transmission Medium)</strong> → amplop dan pos.</li>
+      <li><strong>Penerima (Receiver)</strong> → orang yang menerima surat.</li>
+      <li><strong>Protokol (Protocol)</strong> → aturan bahasa dan format surat.</li>
+    </ul>
+  </section>
+
+  <section id="pengayaan">
+    <h2>Materi Pengayaan</h2>
+    <h3>Media & Teknologi Transmisi</h3>
+    <p>Media transmisi adalah jalur atau sarana yang digunakan untuk membawa data dari pengirim ke penerima. Secara umum, dibagi menjadi:</p>
+    <ul>
+      <li><strong>Kabel (Wired)</strong>: UTP, Coaxial, Fiber Optik.</li>
+      <li><strong>Nirkabel (Wireless)</strong>: Wi-Fi, GSM, Satelit, Bluetooth.</li>
+    </ul>
+    <h3>Model & Standar Komunikasi Data</h3>
+    <p><strong>Model OSI</strong> terdiri dari 7 lapisan (Physical – Application).  
+       <strong>Model TCP/IP</strong> terdiri dari 4 lapisan (Network Access – Application).  
+       Standar dibuat oleh ISO, IEEE, IETF.</p>
+    <h3>Teknik Pengiriman Data</h3>
+    <ul>
+      <li><strong>Switching</strong>: Circuit, Packet, Message.</li>
+      <li><strong>Multiplexing</strong>: FDM, TDM, WDM.</li>
+      <li><strong>Error Detection</strong>: Parity, CRC, FEC.</li>
+    </ul>
+    <h3>Jaringan Komunikasi</h3>
+    <p>Topologi: Bus, Star, Ring, Mesh.  
+       Perangkat: Hub, Switch, Router, Modem, Access Point.  
+       Skala: LAN, MAN, WAN, Internet.</p>
+    <h3>Keamanan & Etika</h3>
+    <p>Aspek penting: Enkripsi, Autentikasi, Firewall.  
+       Ancaman: Sniffing, Spoofing, Malware.  
+       Etika: menghargai privasi & taat hukum (UU ITE).</p>
+    <h3>Aplikasi Nyata</h3>
+    <p>Perbankan, transportasi, pendidikan, kesehatan, industri, IoT, cloud, media sosial.</p>
+  </section>
+
+  <footer>
+    © 2025 Komunikasi Data – Minggu 1 | Universitas STTAR
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
