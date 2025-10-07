@@ -3,224 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minggu 1 - Pendahuluan & Ruang Lingkup Komunikasi Data</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Tahoma, sans-serif;
-      margin: 0;
-      background-color: #f8f9fa;
-      color: #222;
-    }
-
-    header {
-      background: linear-gradient(135deg, #007bff, #0056b3);
-      color: white;
-      text-align: center;
-      padding: 1.5em 1em;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 1.8em;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background: #e9ecef;
-      border-bottom: 2px solid #ccc;
-    }
-
-    nav button {
-      background: none;
-      border: none;
-      padding: 0.8em 1.5em;
-      margin: 0.2em;
-      font-size: 1em;
-      cursor: pointer;
-      border-radius: 6px;
-      transition: all 0.3s;
-    }
-
-    nav button:hover {
-      background: #007bff;
-      color: white;
-    }
-
-    nav button.active {
-      background: #0056b3;
-      color: white;
-    }
-
-    section {
-      display: none;
-      padding: 2em;
-      animation: fadeIn 0.5s ease;
-      line-height: 1.6em;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section.active {
-      display: block;
-    }
-
-    h2 {
-      color: #0056b3;
-    }
-
-    ul {
-      margin-left: 1.5em;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    footer {
-      text-align: center;
-      padding: 1em;
-      margin-top: 2em;
-      background: #f1f1f1;
-      border-top: 1px solid #ccc;
-      font-size: 0.9em;
-    }
-  </style>
+  <title>Pertemuan 1 - Pendahuluan Komunikasi Data</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Komunikasi Data – Minggu 1</h1>
-    <p><em>Pendahuluan & Ruang Lingkup Komunikasi Data</em></p>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-blue-700 text-white py-6 shadow-lg">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-extrabold tracking-wide uppercase">PERTEMUAN 1: Pendahuluan Komunikasi Data</h1>
+      <p class="text-lg mt-2 font-medium">Mata Kuliah: Komunikasi Data | STTAR Ternate</p>
+      <p class="mt-2 text-sm md:text-base">Dosen:
+        <span class="font-semibold">Takdir Ruslan, ST., M.Kom</span> /
+        <span class="font-semibold">Abdurrahman, S.Pi</span>
+      </p>
+    </div>
   </header>
 
-  <nav>
-    <button class="active" onclick="showSection('tujuan')">Tujuan</button>
-    <button onclick="showSection('pengertian')">Pengertian</button>
-    <button onclick="showSection('komponen')">Komponen</button>
-    <button onclick="showSection('manfaat')">Manfaat</button>
-    <button onclick="showSection('analogi')">Analogi</button>
-    <button onclick="showSection('pengayaan')">Materi Pengayaan</button>
-  </nav>
-
-  <section id="tujuan" class="active">
-    <h2>Tujuan Pembelajaran</h2>
-    <p>Setelah mengikuti perkuliahan minggu ini, mahasiswa diharapkan mampu:</p>
-    <ul>
-      <li>Menjelaskan definisi komunikasi data.</li>
-      <li>Memahami ruang lingkup mata kuliah komunikasi data.</li>
-      <li>Mengidentifikasi manfaat komunikasi data dalam kehidupan sehari-hari.</li>
-      <li>Menghubungkan komunikasi data dengan bidang Teknik Informatika dan jaringan komputer.</li>
-    </ul>
-    <h3>Ruang Lingkup Mata Kuliah</h3>
-    <ul>
-      <li>Konsep sinyal, data, dan transmisi.</li>
-      <li>Model OSI & TCP/IP.</li>
-      <li>Media transmisi kabel & wireless.</li>
-      <li>Switching & multiplexing.</li>
-      <li>Deteksi & koreksi kesalahan.</li>
-      <li>Protokol komunikasi populer.</li>
-      <li>Topologi jaringan & perangkat.</li>
-      <li>Keamanan data dasar.</li>
-      <li>Aplikasi komunikasi data dalam kehidupan nyata.</li>
-    </ul>
+  <!-- TUJUAN PEMBELAJARAN -->
+  <section class="container mx-auto my-10 px-4">
+    <div class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-blue-700 mb-4 text-center uppercase">Tujuan Pembelajaran</h2>
+      <ul class="list-disc pl-6 space-y-2 text-justify leading-relaxed">
+        <li>Menjelaskan definisi komunikasi data.</li>
+        <li>Memahami ruang lingkup mata kuliah komunikasi data.</li>
+        <li>Mengidentifikasi manfaat komunikasi data dalam kehidupan sehari-hari.</li>
+        <li>Menghubungkan komunikasi data dengan bidang Teknik Informatika dan jaringan komputer.</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="pengertian">
-    <h2>Pengertian Komunikasi Data</h2>
-    <p><strong>Komunikasi</strong> = proses penyampaian informasi dari pengirim (sender) ke penerima (receiver).</p>
-    <p><strong>Data</strong> = representasi fakta, konsep, atau instruksi dalam bentuk yang bisa diproses (angka, teks, gambar, audio, video).</p>
-    <p><strong>Komunikasi Data</strong> = proses pengiriman dan penerimaan data antara dua perangkat atau lebih melalui media transmisi.</p>
-    <h3>Contoh Sehari-hari:</h3>
-    <ul>
-      <li>Mengirim pesan WhatsApp → teks dikirim dari HP A ke HP B melalui jaringan.</li>
-      <li>Streaming YouTube → data video/audio dikirim dari server ke laptop atau ponsel.</li>
-    </ul>
+  <!-- RUANG LINGKUP -->
+  <section class="container mx-auto my-8 px-4">
+    <div class="bg-blue-50 rounded-xl shadow-md p-6">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4 uppercase text-center">Ruang Lingkup Mata Kuliah</h2>
+      <p class="mb-4 text-justify leading-relaxed">
+        Mata kuliah ini membahas berbagai aspek dasar dalam komunikasi data yang menjadi fondasi dalam jaringan komputer modern:
+      </p>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Konsep sinyal, data, dan transmisi.</li>
+        <li>Model OSI & TCP/IP.</li>
+        <li>Media transmisi kabel & wireless.</li>
+        <li>Switching & multiplexing.</li>
+        <li>Deteksi & koreksi kesalahan.</li>
+        <li>Protokol komunikasi populer.</li>
+        <li>Topologi jaringan & perangkat.</li>
+        <li>Keamanan data dasar.</li>
+        <li>Aplikasi komunikasi data dalam kehidupan nyata.</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="komponen">
-    <h2>Komponen dalam Komunikasi Data</h2>
-    <ul>
-      <li><strong>Sender (Pengirim)</strong> – perangkat yang mengirim data (PC, smartphone).</li>
-      <li><strong>Receiver (Penerima)</strong> – perangkat tujuan data (PC lain, server, printer).</li>
-      <li><strong>Message (Pesan/Data)</strong> – informasi yang dikirim (teks, gambar, audio).</li>
-      <li><strong>Transmission Medium (Media Transmisi)</strong> – jalur fisik/non-fisik (kabel, fiber, wireless).</li>
-      <li><strong>Protocol</strong> – aturan agar komunikasi berjalan benar (contoh: TCP/IP, HTTP, Bluetooth).</li>
-    </ul>
+  <!-- PENGERTIAN -->
+  <section class="container mx-auto my-8 px-4">
+    <div class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4 uppercase text-center">Pengertian Komunikasi Data</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><b>Komunikasi</b> → proses penyampaian informasi dari pengirim (sender) ke penerima (receiver).</li>
+        <li><b>Data</b> → representasi fakta, konsep, atau instruksi dalam bentuk angka, teks, gambar, audio, atau video.</li>
+        <li><b>Komunikasi Data</b> → proses pengiriman dan penerimaan data antara dua perangkat atau lebih melalui media transmisi.</li>
+      </ul>
+
+      <p class="mt-4"><b>Contoh:</b></p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Mengirim pesan WhatsApp → teks dikirim dari HP A → diproses jaringan → diterima HP B.</li>
+        <li>Streaming YouTube → data video/audio dikirim dari server → diterima laptop/HP.</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="manfaat">
-    <h2>Manfaat Komunikasi Data</h2>
-    <ul>
-      <li>Efisiensi waktu – informasi bisa dikirim dalam hitungan detik (email, chat).</li>
-      <li>Kemudahan akses informasi – data dapat diakses kapan saja, di mana saja (cloud storage).</li>
-      <li>Kolaborasi – mendukung kerja tim jarak jauh (Google Docs, Zoom).</li>
-      <li>Otomatisasi & kontrol – sistem IoT, smart home, dan industri 4.0.</li>
-      <li>Penyebaran informasi global – internet sebagai sarana komunikasi internasional.</li>
-    </ul>
+  <!-- KOMPONEN -->
+  <section class="container mx-auto my-8 px-4">
+    <div class="bg-blue-50 rounded-xl shadow-md p-6">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4 uppercase text-center">Komponen dalam Komunikasi Data</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><b>Sender (Pengirim)</b> – perangkat yang mengirim data (PC, smartphone).</li>
+        <li><b>Receiver (Penerima)</b> – perangkat tujuan data (PC lain, server, printer).</li>
+        <li><b>Message (Pesan)</b> – informasi yang dikirim (teks, gambar, audio).</li>
+        <li><b>Transmission Medium</b> – jalur fisik/non-fisik (kabel, fiber, wireless).</li>
+        <li><b>Protocol</b> – aturan agar komunikasi berjalan benar (contoh: TCP/IP, HTTP, Bluetooth).</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="analogi">
-    <h2>Analogi Komunikasi Data</h2>
-    <p>Komunikasi data seperti percakapan manusia:</p>
-    <ul>
-      <li>Bahasa = protokol</li>
-      <li>Suara = sinyal</li>
-      <li>Telepon = media transmisi</li>
-      <li>Orang bicara = pengirim & penerima</li>
-    </ul>
-    <p>Seperti mengirim surat:</p>
-    <ul>
-      <li><strong>Pengirim (Sender)</strong> → orang yang menulis surat.</li>
-      <li><strong>Pesan (Message)</strong> → isi surat.</li>
-      <li><strong>Media (Transmission Medium)</strong> → amplop dan pos.</li>
-      <li><strong>Penerima (Receiver)</strong> → orang yang menerima surat.</li>
-      <li><strong>Protokol (Protocol)</strong> → aturan bahasa dan format surat.</li>
-    </ul>
+  <!-- MANFAAT -->
+  <section class="container mx-auto my-8 px-4">
+    <div class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4 uppercase text-center">Manfaat Komunikasi Data</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Efisiensi waktu – informasi bisa dikirim dalam hitungan detik.</li>
+        <li>Kemudahan akses informasi – data dapat diakses kapan saja, di mana saja.</li>
+        <li>Kolaborasi – mendukung kerja tim jarak jauh (Zoom, Google Docs, dll).</li>
+        <li>Otomatisasi & kontrol – sistem IoT, smart home, industri 4.0.</li>
+        <li>Penyebaran informasi global – internet sebagai sarana komunikasi internasional.</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="pengayaan">
-    <h2>Materi Pengayaan</h2>
-    <h3>Media & Teknologi Transmisi</h3>
-    <p>Media transmisi adalah jalur atau sarana yang digunakan untuk membawa data dari pengirim ke penerima. Secara umum, dibagi menjadi:</p>
-    <ul>
-      <li><strong>Kabel (Wired)</strong>: UTP, Coaxial, Fiber Optik.</li>
-      <li><strong>Nirkabel (Wireless)</strong>: Wi-Fi, GSM, Satelit, Bluetooth.</li>
-    </ul>
-    <h3>Model & Standar Komunikasi Data</h3>
-    <p><strong>Model OSI</strong> terdiri dari 7 lapisan (Physical – Application).  
-       <strong>Model TCP/IP</strong> terdiri dari 4 lapisan (Network Access – Application).  
-       Standar dibuat oleh ISO, IEEE, IETF.</p>
-    <h3>Teknik Pengiriman Data</h3>
-    <ul>
-      <li><strong>Switching</strong>: Circuit, Packet, Message.</li>
-      <li><strong>Multiplexing</strong>: FDM, TDM, WDM.</li>
-      <li><strong>Error Detection</strong>: Parity, CRC, FEC.</li>
-    </ul>
-    <h3>Jaringan Komunikasi</h3>
-    <p>Topologi: Bus, Star, Ring, Mesh.  
-       Perangkat: Hub, Switch, Router, Modem, Access Point.  
-       Skala: LAN, MAN, WAN, Internet.</p>
-    <h3>Keamanan & Etika</h3>
-    <p>Aspek penting: Enkripsi, Autentikasi, Firewall.  
-       Ancaman: Sniffing, Spoofing, Malware.  
-       Etika: menghargai privasi & taat hukum (UU ITE).</p>
-    <h3>Aplikasi Nyata</h3>
-    <p>Perbankan, transportasi, pendidikan, kesehatan, industri, IoT, cloud, media sosial.</p>
+  <!-- APLIKASI NYATA -->
+  <section class="container mx-auto my-8 px-4">
+    <div class="bg-blue-50 rounded-xl shadow-md p-6">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4 uppercase text-center">Aplikasi Nyata Komunikasi Data</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Perbankan → transfer uang online.</li>
+        <li>Transportasi → aplikasi ojek online (Gojek, Grab).</li>
+        <li>Pendidikan → e-learning, kuliah online.</li>
+        <li>Kesehatan → telemedicine.</li>
+        <li>Industri → sensor IoT, sistem SCADA.</li>
+      </ul>
+    </div>
   </section>
 
-  <footer>
-    © 2025 Komunikasi Data – Minggu 1 | Universitas STTAR
+  <!-- ANALOGI -->
+  <section class="container mx-auto my-8 px-4">
+    <div class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-2xl font-bold text-blue-700 mb-4 uppercase text-center">Analogi Sederhana</h2>
+      <p class="mb-4 text-justify">
+        Komunikasi data dapat diibaratkan seperti percakapan manusia:
+      </p>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><b>Bahasa</b> = Protokol</li>
+        <li><b>Suara</b> = Sinyal</li>
+        <li><b>Telepon</b> = Media Transmisi</li>
+        <li><b>Orang bicara</b> = Sender & Receiver</li>
+      </ul>
+      <p class="mt-4 text-justify">
+        Tanpa bahasa yang sama, suara yang jelas, atau alat komunikasi, pesan tidak akan sampai dengan benar — begitu pula dalam komunikasi data.
+      </p>
+    </div>
+  </section>
+
+  <!-- NAVIGASI OTOMATIS -->
+  <script>
+    const path = window.location.pathname;
+    const match = path.match(/minggu(\d+)\.html/);
+    const currentWeek = match ? parseInt(match[1]) : 0;
+    const prevWeek = currentWeek > 1 ? currentWeek - 1 : null;
+    const nextWeek = currentWeek < 16 ? currentWeek + 1 : null;
+
+    const navSection = document.createElement("section");
+    navSection.className = "mt-10 text-center";
+    navSection.innerHTML = `
+      <div class="flex justify-center flex-wrap gap-4 mb-10">
+        ${prevWeek ? 
+          `<a href="minggu${prevWeek}.html" class='bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md transition'>⬅️ Pertemuan ${prevWeek}</a>` : ""}
+        <a href="index.html" class="bg-gray-600 hover:bg-gray-800 text-white px-4 py-2 rounded-lg shadow-md transition">🏠 Halaman Utama</a>
+        ${nextWeek ? 
+          `<a href="minggu${nextWeek}.html" class='bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow-md transition'>Pertemuan ${nextWeek} ➡️</a>` : ""}
+      </div>`;
+    document.body.appendChild(navSection);
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-700 text-white text-center py-4 mt-10">
+    <p class="text-sm md:text-base font-medium tracking-wide">
+      &copy; 2025 STTAR TERNATE | MATA KULIAH KOMUNIKASI DATA
+    </p>
   </footer>
 
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
-    }
-  </script>
 </body>
 </html>
