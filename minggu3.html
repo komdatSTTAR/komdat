@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minggu 3 – Transmisi Data | Komunikasi Data</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    section { scroll-margin-top: 6rem; }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+  <!-- HEADER -->
+  <header class="bg-blue-700 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+      <h1 class="text-2xl font-bold uppercase tracking-wide">📡 Komunikasi Data – Minggu 3</h1>
+      <nav class="flex flex-wrap gap-3 text-sm">
+        <a href="#tujuan" class="bg-blue-600 hover:bg-blue-500 px-3 py-2 rounded-md">🎯 Tujuan</a>
+        <a href="#pokok" class="bg-blue-600 hover:bg-blue-500 px-3 py-2 rounded-md">📘 Pokok Bahasan</a>
+        <a href="#materi" class="bg-blue-600 hover:bg-blue-500 px-3 py-2 rounded-md">📗 Materi</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="text-center py-12 bg-gradient-to-b from-blue-100 to-white">
+    <h2 class="text-4xl font-bold text-blue-700 mb-3 uppercase">Transmisi Data</h2>
+    <p class="text-gray-700 text-lg">Selasa, 14 Oktober 2025 • Semester 5 • Dosen: <strong>Takdir Ruslan, ST., M.Kom</strong> / <strong>Abdurrahman, S.Pi</strong></p>
+  </section>
+
+  <!-- TUJUAN -->
+  <section id="tujuan" class="max-w-5xl mx-auto py-10 px-6">
+    <h3 class="text-2xl font-bold text-blue-700 mb-4 uppercase">🎯 Tujuan Pembelajaran</h3>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Menjelaskan konsep dasar transmisi data dan komponennya.</li>
+      <li>Menjelaskan perbedaan antara bandwidth dan channel.</li>
+      <li>Membedakan sistem transmisi simplex, half-duplex, dan full-duplex.</li>
+      <li>Menjelaskan faktor-faktor yang memengaruhi kecepatan dan kualitas transmisi.</li>
+    </ul>
+  </section>
+
+  <!-- POKOK BAHASAN -->
+  <section id="pokok" class="max-w-5xl mx-auto py-10 px-6 bg-gray-100 rounded-2xl shadow-inner">
+    <h3 class="text-2xl font-bold text-blue-700 mb-4 uppercase">📘 Pokok Bahasan</h3>
+    <ol class="list-decimal list-inside space-y-1">
+      <li>Pengantar Transmisi Data</li>
+      <li>Konsep Bandwidth dan Channel</li>
+      <li>Jenis Transmisi: Simplex, Half-Duplex, Full-Duplex</li>
+      <li>Faktor yang Mempengaruhi Transmisi</li>
+      <li>Contoh Penerapan dalam Kehidupan Nyata</li>
+    </ol>
+  </section>
+
+  <!-- MATERI INTI -->
+  <section id="materi" class="max-w-5xl mx-auto py-10 px-6">
+    <h3 class="text-2xl font-bold text-blue-700 mb-6 uppercase">📗 Materi Inti</h3>
+
+    <h4 class="text-xl font-semibold text-blue-600 mt-6">1️⃣ Pengantar Transmisi Data</h4>
+    <p class="mt-2">Transmisi data adalah proses pengiriman dan penerimaan data antara dua atau lebih perangkat melalui media tertentu (seperti kabel, gelombang radio, atau cahaya). Tujuan utamanya adalah agar informasi dapat berpindah dari sumber ke tujuan dengan cepat dan akurat.</p>
+    <p class="mt-2 italic text-gray-700">Analogi sederhana: transmisi data seperti mengirim pesan lewat jalan raya — data adalah mobil, media adalah jalan, dan bandwidth adalah lebarnya jalan.</p>
+
+    <h4 class="text-xl font-semibold text-blue-600 mt-6">2️⃣ Konsep Bandwidth dan Channel</h4>
+    <ul class="list-disc list-inside mt-2">
+      <li><strong>Bandwidth:</strong> Kapasitas maksimum media untuk mentransmisikan data, biasanya diukur dalam bit per second (bps).</li>
+      <li><strong>Channel:</strong> Jalur logis atau fisik tempat sinyal dikirimkan.</li>
+    </ul>
+
+    <div class="bg-blue-50 p-4 rounded-lg mt-4 text-sm">
+      💡 <strong>Ilustrasi:</strong> Jika jaringan seperti jalan raya, maka bandwidth = lebar jalan, dan channel = jalur yang digunakan kendaraan untuk lewat.
+    </div>
+
+    <h4 class="text-xl font-semibold text-blue-600 mt-6">3️⃣ Jenis Transmisi Data</h4>
+    <table class="table-auto w-full text-left border mt-2 text-sm md:text-base">
+      <thead class="bg-blue-100 font-semibold">
+        <tr>
+          <th class="border px-3 py-2">Jenis Transmisi</th>
+          <th class="border px-3 py-2">Deskripsi</th>
+          <th class="border px-3 py-2">Contoh</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border px-3 py-2 font-semibold">Simplex</td>
+          <td class="border px-3 py-2">Data hanya bergerak satu arah.</td>
+          <td class="border px-3 py-2">Contoh: Monitor komputer menerima data dari CPU, tapi tidak mengirim balik.</td>
+        </tr>
+        <tr>
+          <td class="border px-3 py-2 font-semibold">Half-Duplex</td>
+          <td class="border px-3 py-2">Data bergerak dua arah, tapi tidak bersamaan.</td>
+          <td class="border px-3 py-2">Contoh: Walkie-talkie (harus bergantian bicara).</td>
+        </tr>
+        <tr>
+          <td class="border px-3 py-2 font-semibold">Full-Duplex</td>
+          <td class="border px-3 py-2">Data bergerak dua arah secara bersamaan.</td>
+          <td class="border px-3 py-2">Contoh: Telepon atau video call.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="text-center mt-6">
+      <h5 class="font-semibold text-blue-600 mb-2">Gambar Ilustrasi Jenis Transmisi</h5>
+      <img src="transmisi_jenis.svg" alt="Jenis Transmisi Data" class="w-96 mx-auto rounded-xl shadow-md border">
+      <p class="text-xs text-gray-500 mt-2">KOMDAT - Minggu 3 - STTAR Ternate</p>
+    </div>
+
+    <h4 class="text-xl font-semibold text-blue-600 mt-8">4️⃣ Faktor yang Mempengaruhi Kualitas Transmisi</h4>
+    <ul class="list-disc list-inside mt-2">
+      <li><strong>Media transmisi:</strong> Jenis kabel atau sinyal (tembaga, fiber optik, wireless).</li>
+      <li><strong>Jarak:</strong> Semakin jauh, semakin besar kemungkinan sinyal melemah.</li>
+      <li><strong>Noise:</strong> Gangguan yang dapat menurunkan kejelasan sinyal.</li>
+      <li><strong>Bandwidth:</strong> Semakin besar bandwidth, semakin tinggi kecepatan transfer data.</li>
+    </ul>
+
+    <div class="bg-green-50 p-4 rounded-lg mt-4 text-sm">
+      ⚙️ <strong>Tips Praktis:</strong>  
+      Gunakan kabel berkualitas dan hindari gangguan elektromagnetik agar transmisi stabil.
+    </div>
+
+    <h4 class="text-xl font-semibold text-blue-600 mt-8">5️⃣ Penerapan di Dunia Nyata</h4>
+    <p class="mt-2">Berikut contoh bagaimana sistem transmisi digunakan dalam kehidupan sehari-hari:</p>
+    <ul class="list-disc list-inside mt-2">
+      <li><strong>Jaringan Wi-Fi:</strong> Menggunakan transmisi full-duplex dengan sinyal radio.</li>
+      <li><strong>Jaringan TV Kabel:</strong> Menggunakan transmisi half-duplex atau multiplexing.</li>
+      <li><strong>Radio FM:</strong> Transmisi simplex dari stasiun ke penerima.</li>
+      <li><strong>Telepon Seluler:</strong> Transmisi full-duplex dua arah secara simultan.</li>
+    </ul>
+
+    <div class="bg-yellow-50 p-4 rounded-lg mt-6">
+      ✨ <strong>Kesimpulan:</strong>  
+      Transmisi data menentukan bagaimana informasi berpindah.  
+      Pemahaman bandwidth, channel, dan jenis transmisi membantu kita memahami cara kerja komunikasi modern.
+    </div>
+
+  </section>
+
+  <!-- NAVIGASI -->
+  <div class="flex flex-col sm:flex-row justify-between items-center max-w-5xl mx-auto py-10 px-6 gap-4">
+    <a href="minggu2.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-6 rounded-lg shadow-md w-full sm:w-auto text-center">⬅️ Materi Sebelumnya</a>
+    <a href="index.html" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md w-full sm:w-auto text-center">🏠 Kembali ke Home</a>
+    <a href="minggu4.html" class="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-6 rounded-lg shadow-md w-full sm:w-auto text-center">Materi Selanjutnya ➡️</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-700 text-white text-center py-4 mt-4">
+    <p class="text-sm">&copy; 2025 | Mata Kuliah Komunikasi Data – STTAR Ternate</p>
+  </footer>
+
+</body>
+</html>
