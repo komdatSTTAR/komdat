@@ -7,105 +7,97 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gradient-to-b from-blue-50 to-white text-gray-800 font-sans">
-  
-  <!-- HEADER -->
-  <header class="bg-blue-700 text-white shadow-lg">
-    <div class="max-w-6xl mx-auto text-center py-8 px-4">
-      <h1 class="text-3xl md:text-4xl font-bold uppercase tracking-wide">📡 Mata Kuliah: Komunikasi Data</h1>
-      <p class="text-lg mt-2">Semester 5 • Prodi Informatika • STTAR Ternate</p>
-      <p class="mt-1 text-sm md:text-base">
-        Dosen: <span class="font-semibold">Takdir Ruslan, ST., M.Kom</span> / 
-        <span class="font-semibold">Abdurrahman, S.Pi</span>
+<body class="bg-gradient-to-b from-blue-50 via-white to-green-50 text-gray-800 font-sans">
+
+  <!-- HERO / JUDUL MATA KULIAH -->
+  <section class="bg-gradient-to-r from-blue-600 via-blue-500 to-green-500 text-white shadow-lg py-14">
+    <div class="max-w-6xl mx-auto text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold uppercase tracking-wide drop-shadow-lg">
+        📡 KOMUNIKASI DATA
+      </h1>
+      <p class="text-lg md:text-xl mt-4 font-light tracking-wider">
+        Semester 5 • Program Studi Informatika • STTAR Ternate
       </p>
     </div>
-  </header>
+  </section>
 
-  <!-- RPS DAN LINK MATERI -->
-  <section class="max-w-6xl mx-auto my-10 px-6">
-    <h2 class="text-2xl md:text-3xl font-bold text-blue-700 text-center mb-6 uppercase">
-      Rencana Pembelajaran Semester (RPS)
-    </h2>
+  <!-- KARTU DOSEN -->
+  <section class="max-w-4xl mx-auto px-6 -mt-10 relative z-10">
+    <div class="bg-white rounded-2xl shadow-xl border border-blue-100 p-6 md:flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <div class="bg-blue-100 text-blue-700 p-3 rounded-full text-2xl">👨‍🏫</div>
+        <div>
+          <h3 class="text-xl font-bold text-blue-700">Dosen Pengampu</h3>
+          <p class="text-gray-700">Takdir Ruslan, ST., M.Kom</p>
+          <p class="text-gray-700">Abdurrahman, S.Pi</p>
+        </div>
+      </div>
+      <a href="#rps" class="mt-4 md:mt-0 inline-block bg-blue-600 hover:bg-green-600 text-white font-semibold px-5 py-2 rounded-lg shadow">
+        📘 Lihat RPS & Materi
+      </a>
+    </div>
+  </section>
+
+  <!-- DESKRIPSI SINGKAT -->
+  <section class="max-w-5xl mx-auto mt-16 px-6 text-center">
+    <p class="text-lg text-gray-600 leading-relaxed">
+      Mata kuliah <strong>Komunikasi Data</strong> membahas prinsip dasar pertukaran data antar perangkat, model referensi jaringan, media transmisi, serta teknik-teknik yang digunakan dalam komunikasi digital modern.
+      <br class="hidden sm:block">Mahasiswa diharapkan memahami konsep sinyal, transmisi, protokol, dan keamanan dalam jaringan komputer.
+    </p>
+  </section>
+
+  <!-- RPS DAN MATERI -->
+  <section id="rps" class="max-w-6xl mx-auto my-14 px-6">
+    <h2 class="text-3xl font-bold text-blue-700 text-center mb-8 uppercase">Rencana Pembelajaran Semester (RPS)</h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-      <!-- Contoh Minggu 1 -->
-      <div class="bg-white rounded-2xl shadow-md border border-blue-100 p-5 hover:shadow-lg transition">
+      <!-- Gunakan pola yang sama untuk semua minggu -->
+      <div class="bg-gradient-to-b from-blue-100 to-green-100 rounded-2xl shadow-md border border-blue-200 p-5 hover:shadow-xl transition">
         <h3 class="font-bold text-blue-700 text-lg">Minggu 1</h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Pendahuluan: ruang lingkup dan manfaat komunikasi data.
-        </p>
-        <a href="minggu1.html" class="inline-block mt-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
+        <p class="text-sm text-gray-700 mt-2">Pendahuluan: ruang lingkup dan manfaat komunikasi data.</p>
+        <a href="minggu1.html" class="inline-block mt-3 bg-blue-600 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
       </div>
 
-      <!-- Minggu 2 -->
-      <div class="bg-white rounded-2xl shadow-md border border-blue-100 p-5 hover:shadow-lg transition">
+      <div class="bg-gradient-to-b from-blue-100 to-green-100 rounded-2xl shadow-md border border-blue-200 p-5 hover:shadow-xl transition">
         <h3 class="font-bold text-blue-700 text-lg">Minggu 2</h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Konsep dasar sinyal & data: analog dan digital.
-        </p>
-        <a href="minggu2.html" class="inline-block mt-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
+        <p class="text-sm text-gray-700 mt-2">Konsep dasar sinyal & data: analog dan digital.</p>
+        <a href="minggu2.html" class="inline-block mt-3 bg-blue-600 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
       </div>
 
-      <!-- Minggu 3 -->
-      <div class="bg-white rounded-2xl shadow-md border border-blue-100 p-5 hover:shadow-lg transition">
+      <div class="bg-gradient-to-b from-blue-100 to-green-100 rounded-2xl shadow-md border border-blue-200 p-5 hover:shadow-xl transition">
         <h3 class="font-bold text-blue-700 text-lg">Minggu 3</h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Transmisi data: bandwidth, simplex, duplex, throughput.
-        </p>
-        <a href="minggu3.html" class="inline-block mt-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
+        <p class="text-sm text-gray-700 mt-2">Transmisi data: bandwidth, simplex, duplex, throughput.</p>
+        <a href="minggu3.html" class="inline-block mt-3 bg-blue-600 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
       </div>
 
-      <!-- Minggu 4 -->
-      <div class="bg-white rounded-2xl shadow-md border border-blue-100 p-5 hover:shadow-lg transition">
+      <div class="bg-gradient-to-b from-blue-100 to-green-100 rounded-2xl shadow-md border border-blue-200 p-5 hover:shadow-xl transition">
         <h3 class="font-bold text-blue-700 text-lg">Minggu 4</h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Model referensi OSI dan peran tiap lapisan.
-        </p>
-        <a href="minggu4.html" class="inline-block mt-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
+        <p class="text-sm text-gray-700 mt-2">Model referensi OSI dan peran tiap lapisan.</p>
+        <a href="minggu4.html" class="inline-block mt-3 bg-blue-600 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
       </div>
 
-      <!-- Minggu 5 -->
-      <div class="bg-white rounded-2xl shadow-md border border-blue-100 p-5 hover:shadow-lg transition">
+      <!-- Lanjutkan sampai minggu 16 -->
+      <div class="bg-gradient-to-b from-blue-100 to-green-100 rounded-2xl shadow-md border border-blue-200 p-5 hover:shadow-xl transition">
         <h3 class="font-bold text-blue-700 text-lg">Minggu 5</h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Model TCP/IP dan perbandingannya dengan OSI.
-        </p>
-        <a href="minggu5.html" class="inline-block mt-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
+        <p class="text-sm text-gray-700 mt-2">Model TCP/IP dan perbandingan dengan OSI.</p>
+        <a href="minggu5.html" class="inline-block mt-3 bg-blue-600 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
       </div>
 
-      <!-- Minggu 6 -->
-      <div class="bg-white rounded-2xl shadow-md border border-blue-100 p-5 hover:shadow-lg transition">
-        <h3 class="font-bold text-blue-700 text-lg">Minggu 6</h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Media transmisi terbimbing: kabel twisted pair, coaxial, dan fiber optik.
-        </p>
-        <a href="minggu6.html" class="inline-block mt-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
-      </div>
-
-      <!-- Minggu 7 -->
-      <div class="bg-white rounded-2xl shadow-md border border-blue-100 p-5 hover:shadow-lg transition">
-        <h3 class="font-bold text-blue-700 text-lg">Minggu 7</h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Media transmisi tak terbimbing: radio, satelit, microwave.
-        </p>
-        <a href="minggu7.html" class="inline-block mt-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
-      </div>
-
-      <!-- (lanjutkan pola sama sampai minggu 16) -->
-      <div class="bg-white rounded-2xl shadow-md border border-blue-100 p-5 hover:shadow-lg transition">
+      <!-- ... copy pola di atas untuk Minggu 6–16 ... -->
+      
+      <div class="bg-gradient-to-b from-blue-100 to-green-100 rounded-2xl shadow-md border border-blue-200 p-5 hover:shadow-xl transition">
         <h3 class="font-bold text-blue-700 text-lg">Minggu 16</h3>
-        <p class="text-sm text-gray-600 mt-2">
-          Review dan evaluasi akhir semester.
-        </p>
-        <a href="minggu16.html" class="inline-block mt-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
+        <p class="text-sm text-gray-700 mt-2">Review dan evaluasi akhir semester.</p>
+        <a href="minggu16.html" class="inline-block mt-3 bg-blue-600 hover:bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg">Lihat Materi</a>
       </div>
+
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-blue-700 text-white text-center py-4 mt-10">
-    <p class="text-sm">&copy; 2025 STTAR Ternate | Mata Kuliah Komunikasi Data</p>
+  <footer class="bg-gradient-to-r from-blue-700 to-green-600 text-white text-center py-5 mt-10 shadow-inner">
+    <p class="text-sm">&copy; 2025 STTAR Ternate • Mata Kuliah Komunikasi Data</p>
   </footer>
 </body>
 </html>
